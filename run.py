@@ -24,7 +24,19 @@ def clear():
     """
     os.system("clear")
 
-clear()
+
+score = 0
+
+
+def wrong_answer(correct_answer, score):
+    """
+    Displays the incorrect answer message along with correct answer,
+    while displaying previous score result.
+    """
+    print("Wrong Unlucky! The answer is " + correct_answer)
+    print("Score: ", score)
+    print("\n")
+
 
 def correct_answer(score):
     """
@@ -32,7 +44,7 @@ def correct_answer(score):
     1 to the score.
     """
     score += 1
-    print("Correct Well Done!")
+    print("Correct, Well Done!")
     print("Score : ", score)
     print("\n")
     return score
