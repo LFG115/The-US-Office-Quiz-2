@@ -58,29 +58,124 @@ def question_three():
     q3 = input("What department is Kevin located in ?")
 
 
+def question_four():
+    """
+    Displays the fourth question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 4
+    q4 = input("Who is the assistant to the reginal Manager ?")
 
 
+def question_five():
+    """
+    Displays the fith question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 5
+    q5 = input("What is Jim's nickname according to Andy ?")
 
 
+def question_six():
+    """
+    Displays the sixth question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 6
+    q6 = input("Where is Dunder Mifflin located ?")
 
 
+def question_seven():
+    """
+    Displays the seventh question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 7
+    q7 = input("What is the receptionist name ?")
 
 
+def question_eight():
+    """
+    Displays the eighth question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 8
+    q8 = input("Who works in HR ?")
 
 
+def question_nine():
+    """
+    Displays the ninth question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 9
+    q9 = input("What has Michael Scott said before ?")
 
 
+def question_ten():
+    """
+    Displays the tenth question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 10
+    q10 = input("Who wins the "'Rear of the Year'" award ? (according to Michael)")
 
 
+def question_eleven():
+    """
+    Displays the eleventh question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 11
+    q11 = input("Who is Jan’s assistant ?")
 
 
+def question_tweleve():
+    """
+    Displays the twelveth question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 12
+    q12 = input("In the "'Booze Cruise'" episode who breaks up on the boat ?")
 
 
+def question_thirteen():
+    """
+    Displays the thirteenth question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 13
+    q13 = input("What's Pam's favourite flavour of yogurt ?")
 
 
+def question_fourteen():
+    """
+    Displays the fourteenth question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 14
+    q14 = input("Who started the fire ?")
 
 
-
+def question_fifteen():
+    """
+    Displays the fifteenth question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 15
+    q15 = input("Who is the final couple we see getting married ?")
 
 
 def wrong_answer(correct_answer, score):
