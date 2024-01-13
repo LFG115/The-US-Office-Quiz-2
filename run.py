@@ -7,7 +7,8 @@ def begin():
     The begining of the game starts with a breife summary of why amd what
     its about then tells you the rules, and ask's your name.
     """
-    print(" *WELCOME TO THE US OFFICE QUIZ!* \n\n\n")
+    print("\n\n")
+    print(" *WELCOME TO THE US OFFICE QUIZ!* \n\n")
 
     print("This show has brought plenty of laughter and joy to our screens.")
     print("It's easy to say the show has been nothing but spectacular!\n")
@@ -25,7 +26,61 @@ def clear():
     os.system("clear")
 
 
-score = 0
+def question_one():
+    """
+    Displays the first question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    score = 0
+
+    #Question 1
+    q1 = input("What item did Jim put in jelly ?")
+
+
+def question_two():
+    """
+    Displays the second question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 2
+    q2 = input("Bob Vance has a business, what is it called ?")
+
+
+def question_three():
+    """
+    Displays the third question.
+    Player must answer the questions to continue
+    and then gives a score.
+    """
+    #Question 3
+    q3 = input("What department is Kevin located in ?")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def wrong_answer(correct_answer, score):
