@@ -15,6 +15,8 @@ def begin():
 
     print("Rules: 15 Questions, 18 Points are up for grabs.\n")
     print("Try not to cheat and good luck!\n")
+    input("Press Enter Key To Begin Quiz...\n")
+
 
 def clear():
     """
@@ -22,17 +24,17 @@ def clear():
     """
     os.system("clear")
 
+clear()
 
-
-
-
-
-
-
-
-
-
-
-
+def correct_answer(score):
+    """
+    Displays the correct answer message and adds
+    1 to the score.
+    """
+    score += 1
+    print("Correct Well Done!")
+    print("Score : ", score)
+    print("\n")
+    return score
 
 begin()
