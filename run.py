@@ -1,4 +1,7 @@
 
+import os
+
+
 def begin():
     """
     The begining of the game starts with a breife summary of why amd what
@@ -12,6 +15,12 @@ def begin():
 
     print("Rules: 15 Questions, 18 Points are up for grabs.\n")
     print("Try not to cheat and good luck!\n")
+
+def clear():
+    """
+    Function to clear the terminal when called.
+    """
+    os.system("clear")
 
 
 
