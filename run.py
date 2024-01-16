@@ -16,14 +16,8 @@ def begin():
 
     print("Rules: 15 Questions, 18 Points are up for grabs.\n")
     print("Try not to cheat and good luck!\n")
-    input("Press Enter Key To Begin Quiz...\n")
-
-
-def clear():
-    """
-    Function to clear the terminal when called.
-    """
-    os.system("clear")
+    input("Press Any Key To Begin Quiz...\n")
+    question_one()
 
 
 def question_one():
@@ -32,10 +26,21 @@ def question_one():
     Player must answer the questions to continue
     and then gives a score.
     """
+    print("\n")
     score = 0
 
     #Question 1
-    q1 = input("What item did Jim put in jelly ?")
+    q1 = input("Q1: What item did Jim put in jelly ? \
+    \n\n1. Mug \n\n2. Stapler \n\n3. Pen \n\n4. Calculator \n\nAnswer:  ")
+    if q1 in ['1', '2', '3', '4']:
+        if int(q1) == 2:
+            score = correct_answer(score)
+        else:
+            wrong_answer("Stapler", score)
+    else:
+        print("Please enter '1', '2', '3', '4'")
+        question_one()
+
 
 
 def question_two():
@@ -45,7 +50,7 @@ def question_two():
     and then gives a score.
     """
     #Question 2
-    q2 = input("Bob Vance has a business, what is it called ?")
+    q2 = input("Q2: Bob Vance has a business, what is it called ?")
 
 
 def question_three():
@@ -55,7 +60,7 @@ def question_three():
     and then gives a score.
     """
     #Question 3
-    q3 = input("What department is Kevin located in ?")
+    q3 = input("Q3: What department is Kevin located in ?")
 
 
 def question_four():
@@ -65,7 +70,7 @@ def question_four():
     and then gives a score.
     """
     #Question 4
-    q4 = input("Who is the assistant to the reginal Manager ?")
+    q4 = input("Q4: Who is the assistant to the reginal Manager ?")
 
 
 def question_five():
@@ -75,7 +80,7 @@ def question_five():
     and then gives a score.
     """
     #Question 5
-    q5 = input("What is Jim's nickname according to Andy ?")
+    q5 = input("Q5: What is Jim's nickname according to Andy ?")
 
 
 def question_six():
@@ -85,7 +90,7 @@ def question_six():
     and then gives a score.
     """
     #Question 6
-    q6 = input("Where is Dunder Mifflin located ?")
+    q6 = input("Q6: Where is Dunder Mifflin located ?")
 
 
 def question_seven():
@@ -95,7 +100,7 @@ def question_seven():
     and then gives a score.
     """
     #Question 7
-    q7 = input("What is the receptionist name ?")
+    q7 = input("Q7: What is the receptionist name ?")
 
 
 def question_eight():
@@ -105,7 +110,7 @@ def question_eight():
     and then gives a score.
     """
     #Question 8
-    q8 = input("Who works in HR ?")
+    q8 = input("Q8: Who works in HR ?")
 
 
 def question_nine():
@@ -115,7 +120,7 @@ def question_nine():
     and then gives a score.
     """
     #Question 9
-    q9 = input("What has Michael Scott said before ?")
+    q9 = input("Q9: What has Michael Scott said before ?")
 
 
 def question_ten():
@@ -125,7 +130,7 @@ def question_ten():
     and then gives a score.
     """
     #Question 10
-    q10 = input("Who wins the "'Rear of the Year'" award ? (according to Michael)")
+    q10 = input("Q10: Who wins the "'Rear of the Year'" award ? (according to Michael)")
 
 
 def question_eleven():
@@ -135,7 +140,7 @@ def question_eleven():
     and then gives a score.
     """
     #Question 11
-    q11 = input("Who is Jan’s assistant ?")
+    q11 = input("Q11: Who is Jan’s assistant ?")
 
 
 def question_tweleve():
@@ -145,7 +150,7 @@ def question_tweleve():
     and then gives a score.
     """
     #Question 12
-    q12 = input("In the "'Booze Cruise'" episode who breaks up on the boat ?")
+    q12 = input("Q12: In the "'Booze Cruise'" episode who breaks up on the boat ?")
 
 
 def question_thirteen():
@@ -155,7 +160,7 @@ def question_thirteen():
     and then gives a score.
     """
     #Question 13
-    q13 = input("What's Pam's favourite flavour of yogurt ?")
+    q13 = input("Q13: What's Pam's favourite flavour of yogurt ?")
 
 
 def question_fourteen():
@@ -165,7 +170,7 @@ def question_fourteen():
     and then gives a score.
     """
     #Question 14
-    q14 = input("Who started the fire ?")
+    q14 = input("Q14: Who started the fire ?")
 
 
 def question_fifteen():
@@ -175,7 +180,7 @@ def question_fifteen():
     and then gives a score.
     """
     #Question 15
-    q15 = input("Who is the final couple we see getting married ?")
+    q15 = input("Q15: Who is the final couple we see getting married ?")
 
 
 def wrong_answer(correct_answer, score):
@@ -198,5 +203,11 @@ def correct_answer(score):
     print("Score : ", score)
     print("\n")
     return score
+
+def clear():
+    """
+    Function to clear the terminal when called.
+    """
+    os.system("clear")
 
 begin()
