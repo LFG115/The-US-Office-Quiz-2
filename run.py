@@ -2,37 +2,43 @@
 import os
 
 
-def begin():
+def home():
     """
     The begining of the game starts with a breife summary of why amd what
     its about then tells you the rules, and ask's your name.
     """
     print("\n\n")
-    print(" *WELCOME TO THE US OFFICE QUIZ!* \n\n")
+    print(" *WELCOME TO THE US OFFICE QUIZ!* \n")
 
     print("This show has brought plenty of laughter and joy to our screens.")
     print("It's easy to say the show has been nothing but spectacular!\n")
-    print("As you can tell I am a fan, I hope you enjoy.\n")
+    print("As you will tell I am a fan, I do hope you enjoy.\n")
 
     print("Rules: 15 Questions, 15 Points are up for grabs.")
-    print("Please answer using keys '1', '2', '3', '4' and '5' \n")
+    print("Please answer using keys '1', '2', '3', '4' and some questions '5'\n")
     print("Try not to cheat and good luck!\n")
-    input("Press Any Key To Begin Quiz...\n")
+
+    player_name = input("Enter your name: ")
+    print("\n")
+    input(f"If your ready {player_name} Press the Enter Key To Begin Quiz...\n")
     question_one()
 
     while True:
+        """
+        The play again option will redirect a 'yes'
+        to question 1 of the quiz, a 'no' to the home screen.
+        """
         play_again_response = input(
             "Would you like to play again? ( yes / no ): "
             ).lower()
         if play_again_response == "yes":
-
+            clear()
             question_one()
         elif play_again_response == "no":
-            print("Thanks for playing!")
-            print("/n")
-
+            print("\n\n\n")
+            print("Thanks for playing!\n")
             print("Redirecting you to the Home Screen...\n")
-            begin()
+            home()
             break
         else:
             print("Please enter yes or no")
@@ -384,4 +390,4 @@ def clear():
     os.system("clear")
 
 
-begin()
+home()
