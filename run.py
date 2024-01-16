@@ -20,6 +20,23 @@ def begin():
     input("Press Any Key To Begin Quiz...\n")
     question_one()
 
+    while True:
+        play_again_response = input(
+            "Would you like to play again? ( yes / no ): "
+            ).lower()
+        if play_again_response == "yes":
+
+            question_one()
+        elif play_again_response == "no":
+            print("Thanks for playing!")
+            print("/n")
+
+            print("Redirecting you to the Home Screen...\n")
+            begin()
+            break
+        else:
+            print("Please enter yes or no")
+
 
 def question_one():
     """
