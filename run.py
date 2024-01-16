@@ -14,7 +14,7 @@ def begin():
     print("It's easy to say the show has been nothing but spectacular!\n")
     print("As you can tell I am a fan, I hope you enjoy.\n")
 
-    print("Rules: 15 Questions, 18 Points are up for grabs.\n")
+    print("Rules: 15 Questions, 15 Points are up for grabs.\n")
     print("Try not to cheat and good luck!\n")
     input("Press Any Key To Begin Quiz...\n")
     question_one()
@@ -36,9 +36,10 @@ def question_one():
         if int(q1) == 2:
             score = correct_answer(score)
         else:
-            wrong_answer("Stapler", score)
+            wrong_answer("2. Stapler", score)
     else:
-        print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("Incorrect entry, Try again, Please enter '1', '2', '3', '4'")
+        print("\n")
         question_one()
     question_two(score)
 
@@ -56,9 +57,10 @@ def question_two(score):
         if int(q2) == 3:
             score = correct_answer(score)
         else:
-            wrong_answer("Vance refrigeration's", score)
+            wrong_answer("3. Vance refrigeration's", score)
     else:
         print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
         question_two(score)
     question_three(score)
 
@@ -76,9 +78,10 @@ def question_three(score):
         if int(q3) == 2:
             score = correct_answer(score)
         else:
-            wrong_answer("Accounting", score)
+            wrong_answer("2. Accounting", score)
     else:
         print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
         question_three(score)
     question_four(score)
 
@@ -96,9 +99,10 @@ def question_four(score):
         if int(q4) == 4:
             score = correct_answer(score)
         else:
-            wrong_answer("Dwight", score)
+            wrong_answer("4. Dwight", score)
     else:
         print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
         question_four(score)
     question_five(score)
 
@@ -116,9 +120,10 @@ def question_five(score):
         if int(q5) == 1:
             score = correct_answer(score)
         else:
-            wrong_answer("Tuna", score)
+            wrong_answer("1. Tuna", score)
     else:
         print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
         question_five(score)
     question_six(score)
 
@@ -136,9 +141,10 @@ def question_six(score):
         if int(q6) == 2:
             score = correct_answer(score)
         else:
-            wrong_answer("Tuna", score)
+            wrong_answer("2. Scranton", score)
     else:
         print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
         question_six(score)
     question_seven(score)
 
@@ -156,9 +162,10 @@ def question_seven(score):
         if int(q7) == 4:
             score = correct_answer(score)
         else:
-            wrong_answer("Pam", score)
+            wrong_answer("4. Pam", score)
     else:
         print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
         question_seven(score)
     question_eight(score)
 
@@ -170,7 +177,18 @@ def question_eight(score):
     and then gives a score.
     """
     # Question 8
-    q8 = input("Q8: Who works in HR ?")
+    q8 = input("Q8: Who works in HR ? \
+    \n\n1. Ryan \n\n2. Creed \n\n3. Oscar \n\n4. Toby \n\nAnswer:  ")
+    if q8 in ['1', '2', '3', '4']:
+        if int(q8) == 4:
+            score = correct_answer(score)
+        else:
+            wrong_answer("4. Toby", score)
+    else:
+        print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
+        question_eight(score)
+    question_nine(score)
 
 
 def question_nine(score):
@@ -180,7 +198,18 @@ def question_nine(score):
     and then gives a score.
     """
     # Question 9
-    q9 = input("Q9: What has Michael Scott said before ?")
+    q9 = input("Q9: What has Michael Scott said before ? \
+    \n\n1. 'That's what she said' \n\n2. 'Why always me' \n\n3. 'Beets are life' \n\n4. 'Did I stutter' \n\nAnswer:  ")
+    if q9 in ['1', '2', '3', '4']:
+        if int(q9) == 1:
+            score = correct_answer(score)
+        else:
+            wrong_answer("1. 'That's what she said'", score)
+    else:
+        print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
+        question_nine(score)
+    question_ten(score)
 
 
 def question_ten(score):
@@ -190,7 +219,18 @@ def question_ten(score):
     and then gives a score.
     """
     # Question 10
-    q10 = input("Q10: Who wins the "'Rear of the Year'" award ? (according to Michael)")
+    q10 = input("Q10: Who wins the "'Rear of the Year'" award ? (according to Michael) \
+    \n\n1. Pam  \n\n2. Angela \n\n3. Ryan \n\n4. Dwight \n\n5. Kelly \n\nAnswer:  ")
+    if q10 in ['1', '2', '3', '4', '5']:
+        if int(q10) == 1:
+            score = correct_answer(score)
+        else:
+            wrong_answer("3. Ryan", score)
+    else:
+        print("Incorrect entry, Please enter '1', '2', '3', '4', '5'")
+        print("\n")
+        question_ten(score)
+    question_eleven(score)
 
 
 def question_eleven(score):
@@ -200,7 +240,18 @@ def question_eleven(score):
     and then gives a score.
     """
     # Question 11
-    q11 = input("Q11: Who is Jan’s assistant ?")
+    q11 = input("Q11: Who is Jan’s assistant ? \
+    \n\n1. Hunter \n\n2. David \n\n3. Chad \n\n4. James \n\nAnswer:  ")
+    if q11 in ['1', '2', '3', '4']:
+        if int(q11) == 1:
+            score = correct_answer(score)
+        else:
+            wrong_answer("1. Hunter", score)
+    else:
+        print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
+        question_eleven(score)
+    question_tweleve(score)
 
 
 def question_tweleve(score):
@@ -210,7 +261,18 @@ def question_tweleve(score):
     and then gives a score.
     """
     # Question 12
-    q12 = input("Q12: In the "'Booze Cruise'" episode who breaks up on the boat ?")
+    q12 = input("Q12: In the "'Booze Cruise'" episode who breaks up on the boat ? \
+    \n\n1. Pam and Roy \n\n2. Ryan and Kelly \n\n3. Jim and Katy \n\nAnswer:  ")
+    if q12 in ['1', '2', '3']:
+        if int(q12) == 3:
+            score = correct_answer(score)
+        else:
+            wrong_answer("3. Jim and Katy", score)
+    else:
+        print("Incorrect entry, Please enter '1', '2', '3'")
+        print("\n")
+        question_tweleve(score)
+    question_thirteen(score)
 
 
 def question_thirteen(score):
@@ -220,7 +282,18 @@ def question_thirteen(score):
     and then gives a score.
     """
     # Question 13
-    q13 = input("Q13: What's Pam's favourite flavour of yogurt ?")
+    q13 = input("Q13: What's Pam's favourite flavour of yogurt ? \
+    \n\n1. Vanilla \n\n2. Peach \n\n3. Strawberry & kiwi \n\n4. Mixed berry \n\nAnswer:  ")
+    if q13 in ['1', '2', '3', '4']:
+        if int(q13) == 4:
+            score = correct_answer(score)
+        else:
+            wrong_answer("4. Mixed berry", score)
+    else:
+        print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
+        question_thirteen(score)
+    question_fourteen(score)
 
 
 def question_fourteen(score):
@@ -230,7 +303,18 @@ def question_fourteen(score):
     and then gives a score.
     """
     # Question 14
-    q14 = input("Q14: Who started the fire ?")
+    q14 = input("Q14: Who started the fire ? \
+    \n\n1. Jim started the fire! \n\n2. Ryan started the fire! \n\n3. Kevin started the fire! \n\n4. Oscar started the fire! \n\nAnswer:  ")
+    if q14 in ['1', '2', '3', '4']:
+        if int(q14) == 2:
+            score = correct_answer(score)
+        else:
+            wrong_answer("2. Ryan started the fire!", score)
+    else:
+        print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
+        question_fourteen(score)
+    question_fifteen(score)
 
 
 def question_fifteen(score):
@@ -240,8 +324,18 @@ def question_fifteen(score):
     and then gives a score.
     """
     # Question 15
-    q15 = input("Q15: Who is the final couple we see getting married ?")
-
+    q15 = input("Q15: Who is the final couple we see getting married ? \
+    \n\n1. Jim and Pam \n\n2. Dwight and Angela \n\n3. Kelly and Ryan \n\n4. Michael and Holly \n\nAnswer:  ")
+    if q15 in ['1', '2', '3', '4']:
+        if int(q15) == 1:
+            score = correct_answer(score)
+        else:
+            wrong_answer("1. Jim and Pam", score)
+    else:
+        print("Incorrect entry, Please enter '1', '2', '3', '4'")
+        print("\n")
+        question_fifteen(score)
+    
 
 def wrong_answer(correct_answer, score):
     """
