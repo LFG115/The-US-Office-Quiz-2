@@ -40,30 +40,51 @@ def question_one():
     else:
         print("Please enter '1', '2', '3', '4'")
         question_one()
+    question_two(score)
 
 
-
-def question_two():
+def question_two(score):
     """
     Displays the second question.
     Player must answer the questions to continue
     and then gives a score.
     """
     #Question 2
-    q2 = input("Q2: Bob Vance has a business, what is it called ?")
+    q2 = input("Q2: Bob Vance has a business, what is it called ? \
+    \n\n1. Vance clean & simple \n\n2. Vance reapir & recovery \n\n3. Vance refrigeration's \n\n4. Vance transportation's \n\nAnswer:  ")
+    if q2 in ['1', '2', '3', '4']:
+        if int(q2) == 3:
+            score = correct_answer(score)
+        else:
+            wrong_answer("Vance refrigeration's", score)
+    else:
+        print("Please enter '1', '2', '3', '4'")
+        question_two()
+    question_three(score)
 
 
-def question_three():
+def question_three(score):
     """
     Displays the third question.
     Player must answer the questions to continue
     and then gives a score.
     """
     #Question 3
-    q3 = input("Q3: What department is Kevin located in ?")
+    q3 = input("Q3: What department is Kevin located in ? \
+    \n\n1. Sales \n\n2. Accounting \n\n3. Customer Services \n\n4. Quality assurance \n\nAnswer:  ")
+    if q3 in ['1', '2', '3', '4']:
+        if int(q3) == 2:
+            score = correct_answer(score)
+        else:
+            wrong_answer("Accounting", score)
+    else:
+        print("Please enter '1', '2', '3', '4'")
+        question_two()
+    question_four()(score)
 
 
-def question_four():
+
+def question_four(score):
     """
     Displays the fourth question.
     Player must answer the questions to continue
