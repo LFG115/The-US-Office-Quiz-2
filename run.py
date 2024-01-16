@@ -14,7 +14,8 @@ def begin():
     print("It's easy to say the show has been nothing but spectacular!\n")
     print("As you can tell I am a fan, I hope you enjoy.\n")
 
-    print("Rules: 15 Questions, 15 Points are up for grabs.\n")
+    print("Rules: 15 Questions, 15 Points are up for grabs.")
+    print("Please answer using keys '1', '2', '3', '4' and '5' \n")
     print("Try not to cheat and good luck!\n")
     input("Press Any Key To Begin Quiz...\n")
     question_one()
@@ -222,7 +223,7 @@ def question_ten(score):
     q10 = input("Q10: Who wins the "'Rear of the Year'" award ? (according to Michael) \
     \n\n1. Pam  \n\n2. Angela \n\n3. Ryan \n\n4. Dwight \n\n5. Kelly \n\nAnswer:  ")
     if q10 in ['1', '2', '3', '4', '5']:
-        if int(q10) == 1:
+        if int(q10) == 3:
             score = correct_answer(score)
         else:
             wrong_answer("3. Ryan", score)
@@ -327,10 +328,10 @@ def question_fifteen(score):
     q15 = input("Q15: Who is the final couple we see getting married ? \
     \n\n1. Jim and Pam \n\n2. Dwight and Angela \n\n3. Kelly and Ryan \n\n4. Michael and Holly \n\nAnswer:  ")
     if q15 in ['1', '2', '3', '4']:
-        if int(q15) == 1:
+        if int(q15) == 2:
             score = correct_answer(score)
         else:
-            wrong_answer("1. Jim and Pam", score)
+            wrong_answer("2. Dwight and Angela", score)
     else:
         print("Incorrect entry, Please enter '1', '2', '3', '4'")
         print("\n")
