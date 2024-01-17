@@ -1,5 +1,18 @@
 import time
 import os
+import gspread
+from google.oauth2.service_account import Credentials
+
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+    ]
+
+CREDS = Credentials.from_service_account_file('creds.json')
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open('the_us_office_quiz-2')
 
 
 def clear():
@@ -63,7 +76,7 @@ def home():
     print_by_letter(output_str)
     player_name = input("Enter your name: ")
     print("\n")
-    input(f"If your ready {player_name} Press the Enter Key To Begin Quiz...\n")
+    input(f"If your ready {player_name}\nPress the Enter Key To Begin Quiz...")
     question_one()
 
     while True:
@@ -71,7 +84,8 @@ def home():
         The play again option will redirect a 'yes'
         to question 1 of the quiz, a 'no' to the home screen.
         """
-        play_again_response = input("Would you like to play again? ( yes / no ): ").lower()
+        play_again_response = input("Would you like to play again?\
+        ( yes / no ): ").lower()
         if play_again_response == "yes":
             clear()
             question_one()
@@ -288,9 +302,9 @@ def question_ten(score):
     and then gives a score.
     """
     # Question 10
-    q10 = input("Q10: Who wins the "'Rear of the Year'" award ? (according to Michael) \
-    \n\n1. Pam  \n\n2. Angela \n\n3. Ryan \
-    \n\n4. Dwight \n\n5. Kelly \n\nAnswer:  ")
+    q10 = input("""Q10: Who wins the "'Rear of the Year'" award ?
+    (according to Michael) \n\n1. Pam \n\n2. Angela \n\n3. Ryan
+    \n\n4. Dwight \n\n5. Kelly \n\nAnswer:  """)
     if q10 in ['1', '2', '3', '4', '5']:
         if int(q10) == 3:
             score = correct_answer(score)
@@ -331,8 +345,9 @@ def question_tweleve(score):
     and then gives a score.
     """
     # Question 12
-    q12 = input("Q12: In the "'Booze Cruise'" episode who breaks up on the boat ? \
-    \n\n1. Pam and Roy \n\n2. Ryan and Kelly \n\n3. Jim and Katy \n\nAnswer:  ")
+    q12 = input("""Q12: In the "'Booze Cruise'" episode who breaks
+    up on the boat ? \n\n1. Pam and Roy \n\n2. Ryan and Kelly
+    \n\n3. Jim and Katy \n\nAnswer: """)
     if q12 in ['1', '2', '3']:
         if int(q12) == 3:
             score = correct_answer(score)
@@ -376,7 +391,8 @@ def question_fourteen(score):
     # Question 14
     q14 = input("Q14: Who started the fire ? \
     \n\n1. Jim started the fire! \n\n2. Ryan started the fire! \
-    \n\n3. Kevin started the fire! \n\n4. Oscar started the fire! \n\nAnswer: ")
+    \n\n3. Kevin started the fire! \n\n4. Oscar started the fire! \
+    \n\nAnswer: ")
     if q14 in ['1', '2', '3', '4']:
         if int(q14) == 2:
             score = correct_answer(score)
