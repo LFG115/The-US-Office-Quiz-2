@@ -61,7 +61,7 @@ def home():
     I do hope you enjoy.\n
     '''
     print_by_letter(output_str)
-    player_name = input("Enter your name: \n")
+    player_name = input("Enter your name: ")
     print("\n")
     input(f"If your ready {player_name}\nPress the Enter Key To Begin Quiz...")
     question_one()
@@ -72,7 +72,7 @@ def home():
         to question 1 of the quiz, a 'no' to the home screen.
         """
         play_again_response = input("Would you like to play again?\
-        ( yes / no ): \n").lower()
+        ( yes / no ): ").lower()
         if play_again_response == "yes":
             clear()
             question_one()
@@ -97,7 +97,7 @@ def question_one():
 
     # Question 1
     q1 = input("Q1: What item did Jim put in jelly ? \
-    \n\n1. Mug \n\n2. Stapler \n\n3. Pen \n\n4. Calculator \n\nAnswer: \n")
+    \n\n1. Mug \n\n2. Stapler \n\n3. Pen \n\n4. Calculator \n\nAnswer: ")
     if q1 in ['1', '2', '3', '4']:
         if int(q1) == 2:
             score = correct_answer(score)
@@ -119,7 +119,7 @@ def question_two(score):
     # Question 2
     q2 = input("Q2: Bob Vance has a business, what is it called ? \
     \n\n1. Vance clean & simple \n\n2. Vance reapir & recovery \
-    \n\n3. Vance refrigeration's \n\n4. Vance transportation's \n\nAnswer: \n")
+    \n\n3. Vance refrigeration's \n\n4. Vance transportation's \n\nAnswer: ")
     if q2 in ['1', '2', '3', '4']:
         if int(q2) == 3:
             score = correct_answer(score)
@@ -141,7 +141,7 @@ def question_three(score):
     # Question 3
     q3 = input("Q3: What department is Kevin located in ? \
     \n\n1. Sales \n\n2. Accounting \n\n3. Customer Services \
-    \n\n4. Quality assurance \n\nAnswer: \n")
+    \n\n4. Quality assurance \n\nAnswer: ")
     if q3 in ['1', '2', '3', '4']:
         if int(q3) == 2:
             score = correct_answer(score)
@@ -162,7 +162,7 @@ def question_four(score):
     """
     # Question 4
     q4 = input("Q4: Who is the assistant to the reginal Manager ? \
-    \n\n1. Jim \n\n2. Kevin \n\n3. Oscar \n\n4. Dwight \n\nAnswer: \n")
+    \n\n1. Jim \n\n2. Kevin \n\n3. Oscar \n\n4. Dwight \n\nAnswer: ")
     if q4 in ['1', '2', '3', '4']:
         if int(q4) == 4:
             score = correct_answer(score)
@@ -183,7 +183,7 @@ def question_five(score):
     """
     # Question 5
     q5 = input("Q5: What is Jim's nickname according to Andy ? \
-    \n\n1. Tuna \n\n2. Ham \n\n3. Pikle \n\n4. Cream Cheese \n\nAnswer: \n")
+    \n\n1. Tuna \n\n2. Ham \n\n3. Pikle \n\n4. Cream Cheese \n\nAnswer: ")
     if q5 in ['1', '2', '3', '4']:
         if int(q5) == 1:
             score = correct_answer(score)
@@ -205,7 +205,7 @@ def question_six(score):
     # Question 6
     q6 = input("Q6: Where is Dunder Mifflin located ? \
     \n\n1. Philadelphia \n\n2. Scranton \
-    \n\n3. New York \n\n4. Albany \n\nAnswer: \n")
+    \n\n3. New York \n\n4. Albany \n\nAnswer: ")
     if q6 in ['1', '2', '3', '4']:
         if int(q6) == 2:
             score = correct_answer(score)
@@ -226,7 +226,7 @@ def question_seven(score):
     """
     # Question 7
     q7 = input("Q7: What is the receptionist name ? \
-    \n\n1. Kelly \n\n2. Meredith \n\n3. Angela \n\n4. Pam \n\nAnswer: \n")
+    \n\n1. Kelly \n\n2. Meredith \n\n3. Angela \n\n4. Pam \n\nAnswer: ")
     if q7 in ['1', '2', '3', '4']:
         if int(q7) == 4:
             score = correct_answer(score)
@@ -247,7 +247,7 @@ def question_eight(score):
     """
     # Question 8
     q8 = input("Q8: Who works in HR ? \
-    \n\n1. Ryan \n\n2. Creed \n\n3. Oscar \n\n4. Toby \n\nAnswer: \n")
+    \n\n1. Ryan \n\n2. Creed \n\n3. Oscar \n\n4. Toby \n\nAnswer: ")
     if q8 in ['1', '2', '3', '4']:
         if int(q8) == 4:
             score = correct_answer(score)
@@ -269,7 +269,7 @@ def question_nine(score):
     # Question 9
     q9 = input("Q9: What has Michael Scott said before ? \
     \n\n1. 'That's what she said' \n\n2. 'Why always me' \
-    \n\n3. 'Beets are life' \n\n4. 'Did I stutter' \n\nAnswer: \n")
+    \n\n3. 'Beets are life' \n\n4. 'Did I stutter' \n\nAnswer: ")
     if q9 in ['1', '2', '3', '4']:
         if int(q9) == 1:
             score = correct_answer(score)
@@ -291,7 +291,7 @@ def question_ten(score):
     # Question 10
     q10 = input("""Q10: Who wins the "'Rear of the Year'" award ?
     (according to Michael) \n\n1. Pam \n\n2. Angela \n\n3. Ryan
-    \n\n4. Dwight \n\n5. Kelly \n\nAnswer: \n""")
+    \n\n4. Dwight \n\n5. Kelly \n\nAnswer: """)
     if q10 in ['1', '2', '3', '4', '5']:
         if int(q10) == 3:
             score = correct_answer(score)
@@ -312,7 +312,7 @@ def question_eleven(score):
     """
     # Question 11
     q11 = input("Q11: Who is Jan’s assistant ? \
-    \n\n1. Hunter \n\n2. David \n\n3. Chad \n\n4. James \n\nAnswer: \n")
+    \n\n1. Hunter \n\n2. David \n\n3. Chad \n\n4. James \n\nAnswer: ")
     if q11 in ['1', '2', '3', '4']:
         if int(q11) == 1:
             score = correct_answer(score)
@@ -334,7 +334,7 @@ def question_tweleve(score):
     # Question 12
     q12 = input("""Q12: In the "'Booze Cruise'" episode who breaks
     up on the boat ? \n\n1. Pam and Roy \n\n2. Ryan and Kelly
-    \n\n3. Jim and Katy \n\nAnswer: \n""")
+    \n\n3. Jim and Katy \n\nAnswer: """)
     if q12 in ['1', '2', '3']:
         if int(q12) == 3:
             score = correct_answer(score)
@@ -356,7 +356,7 @@ def question_thirteen(score):
     # Question 13
     q13 = input("Q13: What's Pam's favourite flavour of yogurt ?\
     \n\n1. Vanilla \n\n2. Peach \n\n3. Strawberry & kiwi\
-    \n\n4. Mixed berry \n\nAnswer:  \n")
+    \n\n4. Mixed berry \n\nAnswer:  ")
     if q13 in ['1', '2', '3', '4']:
         if int(q13) == 4:
             score = correct_answer(score)
@@ -379,7 +379,7 @@ def question_fourteen(score):
     q14 = input("Q14: Who started the fire ?\
     \n\n1. Jim started the fire! \n\n2. Ryan started the fire! \
     \n\n3. Kevin started the fire! \n\n4. Oscar started the fire! \
-    \n\nAnswer: \n")
+    \n\nAnswer: ")
     if q14 in ['1', '2', '3', '4']:
         if int(q14) == 2:
             score = correct_answer(score)
@@ -401,7 +401,7 @@ def question_fifteen(score):
     # Question 15
     q15 = input("Q15: Who is the final couple we see getting married ? \
     \n\n1. Jim and Pam \n\n2. Dwight and Angela \n\n3. Kelly and Ryan \
-    \n\n4. Michael and Holly \n\nAnswer: \n")
+    \n\n4. Michael and Holly \n\nAnswer: ")
     if q15 in ['1', '2', '3', '4']:
         if int(q15) == 2:
             score = correct_answer(score)
