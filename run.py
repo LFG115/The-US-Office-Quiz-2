@@ -289,7 +289,7 @@ def question_ten(score):
     and then gives a score.
     """
     # Question 10
-    q10 = input("""Q10: Who wins the "'Rear of the Year'" award ?
+    q10 = input("""Q10: Who wins the "Rear of the Year" award ?
     (according to Michael) \n\n1. Pam \n\n2. Angela \n\n3. Ryan
     \n\n4. Dwight \n\n5. Kelly \n\nAnswer: """)
     if q10 in ['1', '2', '3', '4', '5']:
@@ -332,7 +332,7 @@ def question_tweleve(score):
     and then gives a score.
     """
     # Question 12
-    q12 = input("""Q12: In the "'Booze Cruise'" episode who breaks
+    q12 = input("""Q12: In the "Booze Cruise" episode who breaks
     up on the boat ? \n\n1. Pam and Roy \n\n2. Ryan and Kelly
     \n\n3. Jim and Katy \n\nAnswer: """)
     if q12 in ['1', '2', '3']:
