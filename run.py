@@ -69,7 +69,8 @@ def home():
     while True:
         """
         The play again option will redirect a 'yes'
-        to question 1 of the quiz, a 'no' to the home screen.
+        to question 1 of the quiz, a 'no' to the home screen
+        along with a thank you message.
         """
         play_again_response = input("Would you like to play again?\
         ( yes / no ): ").lower()
@@ -78,7 +79,7 @@ def home():
             question_one()
         elif play_again_response == "no":
             print("\n\n\n")
-            print("Thanks for playing!\n")
+            print(f"Thanks for playing {player_name}! See You Soon!\n")
             print("Redirecting you to the Home Screen...\n")
             home()
             break
