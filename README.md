@@ -9,5 +9,5 @@
 - The game will display the home page with the title "The US Office Quiz" with a welcome message, a small description of the amazing show,
 the main reason I personally decided to choose "The office", the rules and regulations and a good luck message before you begin.
 
-![Welcome Message]()
+![Home screenshot & Welcome Message](images/home_page.png)
 
