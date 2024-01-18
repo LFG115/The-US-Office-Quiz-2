@@ -84,7 +84,7 @@ the main reason I personally decided to choose "The office", the rules and regul
 
 - I have manaully tested the project using [pep8]{https://pep8ci.herokuapp.com/} with no errors showing. 
 
-![pep8(assets//pep8.png)
+![pep8](assets/pep8.png)
 
 - I have used bothe my local termianl and the Heroku website to run the quiz with no errors shwing up.
 
