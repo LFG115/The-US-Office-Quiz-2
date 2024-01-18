@@ -27,6 +27,13 @@ The aim of this project is to:
 - Develop a program that can have additional features added at a later date.
 - Provide a program that has accurate and factual information for the user.
 
+### Pre development
+
+- I wrote out and created a flow chart. All I had to do then is follow the chart and code one area at a time before moving on to the next. The aim is to provide early and continuous delivery of the project.
+
+![flow chart](assets/flow_chart.png.jpeg)
+
+
 ## What you see first:
 
 - The game will display the home page with the title "The US Office Quiz" with a welcome message, a small description of the amazing show,
