@@ -14,20 +14,20 @@ The aim of this project is to:
 - To keep a score tally to incentivise users to return to play again.
 - To have user pass the quiz on to test between there friends.
 
-### User goals:
+## User goals:
 
 - Get clear instructions on how to use the system in front of them that they can refer to if needed.
 - The ability to input their name to make it more personal each time.
 - To have fun in a clear and understanding way.
 
-### Site owner goals
+## Site owner goals
 
 - Provide a program that is easy to use and maintain.
 - Present a program that gives clear instructions each time a user visits.
 - Develop a program that can have additional features added at a later date.
 - Provide a program that has accurate and factual information for the user.
 
-### Pre development
+## Pre development
 
 - I had writen out and created a flow chart. All I had to do then is follow the chart and code one area at a time before moving on to the next. The aim is to provide early and continuous delivery of the project.
 
@@ -62,6 +62,45 @@ the main reason I personally decided to choose "The office", the rules and regul
 
 ![contine question 9](assets/question_9.png)
 
-- After the quiz is complete the player will be asked if they want to play again. They can only choose either yes or no. Yes and the game will clear the terminal and will go back to question one with the score reset. If no is typed then the game will go back to the Home screen. If the player types anything else in the yes/no question it will repeat until the correct entry is entered.
+- After the quiz is complete the user will be asked if they want to play again. They can only choose either yes or no. Yes and the game will clear the terminal and will go back to question one with the score reset. 
+
+- If no is typed in then the game will go back to the Home screen with a personalised thank you for playing message. Then a Redirecting message will follow on from that and you will return to the home screen. If the user types anything else other than yes/no it will repeat until the correct entry is entered.
 
 ![play again message](assets/play_again.png)
+
+## Features:
+
+- **Interactive Game** The game offers an interactive gaming experience, allowing the user to choose an answer with a response received straight back. 
+
+- **Mulitple Choice Questions** The user is presented with 15 multiple choice questions about The US Office. Each question tests the users knowledge on the Tv series. 
+
+- **Informative** If the user gets a question wrong, the game will inform the user they have got it wrong and provides the user with the correct answer. 
+
+- **Score** The users score is tracked throughout the game and increases for each correct answer. 
+
+- **Play Again Feature** Once the player answers all fifteen questions they are given the option of playing again, yes / no.
+
+## Testing:
+
+- I have manaully tested the project using [pep8]{https://pep8ci.herokuapp.com/} with no errors showing. 
+
+![pep8(assets//pep8.png)
+
+- I have used bothe my local termianl and the Heroku website to run the quiz with no errors shwing up.
+
+## Deployment:
+
+This project was deployed using Heroku. 
+- steps for deployment:
+    - Create a new Heroku app
+    - Set the builds to Python and NodeJS in that order
+    - Link the Heroku app to my repository
+    - Click Deploy
+
+## Credits:
+
+- The Code Institute Love-Sandwiches Project help me learn a lot about Python. 
+
+- The (www.w3schools.com) website helped with trying to figure out how to use the correct code and how to get it to work for me. 
+
+- Slack chats - When I was really struggling I was able to ask other students for help. 
