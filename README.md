@@ -46,4 +46,14 @@ the main reason I personally decided to choose "The office", the rules and regul
 
 ![question1](assets/question_1.png)
 
-- 
+- If answered correctly you will be shown a well done message along with the answer you put in, and your score tally will go up by one.
+
+![correct answer message](assets/correct_answer.png)
+
+- If answered incorrectly you will be shown a Wrong Unlucky! message along with the correct answer, and your score tally will stay the same.
+
+![incorrect answer message](assets/incorrect_answer.png)
+
+- If an entry into the terminal is not one of the 4/5 numbers as required, then you will be given an Incorrect Entry message, and the question will then repeat into the terminal in a loop until the correct entry is given.
+
+![Incorrect entry](assets/incorrect_entry.png)
