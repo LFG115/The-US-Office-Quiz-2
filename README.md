@@ -38,6 +38,12 @@ The aim of this project is to:
 
 - The game will display the home page with the title "The US Office Quiz" with a welcome message, a small description of the amazing show,
 the main reason I personally decided to choose "The office", the rules and regulations and a good luck message before you begin.
+- The begining of the game will read out slowly bit by bit to make it more user friendly and understandable so its not just a big block of text.
 
 ![Home screenshot & Welcome Message](assets/home_page.png)
 
+- Once you have put your name into the terminal and pressed enter it will take you to the first question. This will be spaced out for easy reading. As it states in the rules you must answer with ether '1', '2', '3', '4' and '5' *for 1 question*.
+
+![question1](assets/question_1.png)
+
+- 
