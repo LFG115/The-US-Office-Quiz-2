@@ -29,7 +29,7 @@ The aim of this project is to:
 
 ### Pre development
 
-- I wrote out and created a flow chart. All I had to do then is follow the chart and code one area at a time before moving on to the next. The aim is to provide early and continuous delivery of the project.
+- I had writen out and created a flow chart. All I had to do then is follow the chart and code one area at a time before moving on to the next. The aim is to provide early and continuous delivery of the project.
 
 ![flow chart](assets/flow_chart.png.jpeg)
 
@@ -57,3 +57,11 @@ the main reason I personally decided to choose "The office", the rules and regul
 - If an entry into the terminal is not one of the 4/5 numbers as required, then you will be given an Incorrect Entry message, and the question will then repeat into the terminal in a loop until the correct entry is given.
 
 ![Incorrect entry](assets/incorrect_entry.png)
+
+-  The game will continue with the next question until you have completed all fifteen questions and a final score is given at the end of the fifteenth question.
+
+![contine question 9](assets/question_9.png)
+
+- After the quiz is complete the player will be asked if they want to play again. They can only choose either yes or no. Yes and the games goes back to question one with the score reset. If no the game will goes back to the Home screen. If the player types anything else in the question will repeat until the correct entry is entered.
+
+[play again message](assets/play_again.png)
