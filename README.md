@@ -62,6 +62,6 @@ the main reason I personally decided to choose "The office", the rules and regul
 
 ![contine question 9](assets/question_9.png)
 
-- After the quiz is complete the player will be asked if they want to play again. They can only choose either yes or no. Yes and the games goes back to question one with the score reset. If no the game will goes back to the Home screen. If the player types anything else in the question will repeat until the correct entry is entered.
+- After the quiz is complete the player will be asked if they want to play again. They can only choose either yes or no. Yes and the game will clear the terminal and will go back to question one with the score reset. If no is typed then the game will go back to the Home screen. If the player types anything else in the yes/no question it will repeat until the correct entry is entered.
 
-[play again message](assets/play_again.png)
+![play again message](assets/play_again.png)
